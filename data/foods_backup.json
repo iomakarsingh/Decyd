@@ -1,0 +1,381 @@
+[
+  {
+    "id": "butter-chicken",
+    "name": "Butter Chicken",
+    "description": "Rich, creamy North Indian classic",
+    "image": "assets/images/butter-chicken.jpg",
+    "reason": {
+      "rainy": "Warm comfort food for a cozy evening",
+      "cold": "Rich and warming for cold weather",
+      "evening": "Perfect dinner indulgence",
+      "weekend": "Restaurant-quality meal for a relaxed weekend"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 7,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 8,
+      "hot": 3,
+      "pleasant": 7
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Chicken (500g)",
+      "Tomatoes (4 medium)",
+      "Cream (1 cup)",
+      "Butter (3 tbsp)",
+      "Ginger-garlic paste (2 tbsp)",
+      "Kashmiri red chili (1 tsp)",
+      "Garam masala (1 tsp)",
+      "Kasuri methi (1 tsp)",
+      "Salt to taste"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/a03U45jFxOI",
+    "steps": [
+      "Marinate chicken with yogurt, ginger-garlic paste, and spices for 30 minutes",
+      "Grill or pan-fry marinated chicken until slightly charred",
+      "Blend tomatoes into smooth puree",
+      "Heat butter, add tomato puree, cook for 10 minutes",
+      "Add cream, kasuri methi, and garam masala",
+      "Add grilled chicken, simmer for 5 minutes",
+      "Garnish with cream and serve hot with naan"
+    ]
+  },
+  {
+    "id": "masala-dosa",
+    "name": "Masala Dosa",
+    "description": "Crispy South Indian breakfast favorite",
+    "image": "assets/images/masala-dosa.jpg",
+    "reason": {
+      "morning": "Traditional South Indian breakfast to start your day",
+      "weekend": "Classic weekend breakfast treat",
+      "pleasant": "Light and crispy for pleasant weather"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 6,
+      "dinner": 4,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 6,
+      "cold": 5,
+      "hot": 7,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Dosa batter (2 cups)",
+      "Potatoes (4 medium, boiled)",
+      "Onions (2 medium)",
+      "Green chilies (2-3)",
+      "Mustard seeds (1 tsp)",
+      "Curry leaves (8-10)",
+      "Turmeric powder (1/2 tsp)",
+      "Oil for cooking"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/HKJ8ZlFKC-k",
+    "steps": [
+      "Boil and mash potatoes coarsely",
+      "Temper mustard seeds, curry leaves, add onions and green chilies",
+      "Add turmeric and mashed potatoes, mix well",
+      "Heat dosa tawa, spread batter in circular motion",
+      "Drizzle oil on edges, cook until crispy",
+      "Place potato filling in center, fold dosa",
+      "Serve hot with coconut chutney and sambar"
+    ]
+  },
+  {
+    "id": "paneer-tikka",
+    "name": "Paneer Tikka",
+    "description": "Smoky grilled cottage cheese appetizer",
+    "image": "assets/images/paneer-tikka.jpg",
+    "reason": {
+      "evening": "Perfect evening snack with chai",
+      "pleasant": "Light and flavorful for nice weather",
+      "weekday": "Quick protein-rich snack after work"
+    },
+    "timeScore": {
+      "breakfast": 2,
+      "lunch": 6,
+      "dinner": 8,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 6,
+      "hot": 5,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Paneer (250g, cubed)",
+      "Bell peppers (1 each - red, yellow, green)",
+      "Onion (1 large)",
+      "Yogurt (1/2 cup)",
+      "Ginger-garlic paste (1 tbsp)",
+      "Tandoori masala (2 tbsp)",
+      "Lemon juice (2 tbsp)",
+      "Chaat masala (1 tsp)"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/e0XWkTGPKJo",
+    "steps": [
+      "Mix yogurt, ginger-garlic paste, tandoori masala, and lemon juice",
+      "Marinate paneer and vegetables for 30 minutes",
+      "Thread paneer and vegetables on skewers",
+      "Grill in oven or on tawa until charred",
+      "Sprinkle chaat masala",
+      "Serve hot with mint chutney",
+      "Garnish with lemon wedges"
+    ]
+  },
+  {
+    "id": "chole-bhature",
+    "name": "Chole Bhature",
+    "description": "Spicy chickpea curry with fluffy fried bread",
+    "image": "assets/images/chole-bhature.jpg",
+    "reason": {
+      "weekend": "Indulgent weekend breakfast classic",
+      "cold": "Hearty and filling for cold mornings",
+      "morning": "Traditional North Indian breakfast feast"
+    },
+    "timeScore": {
+      "breakfast": 9,
+      "lunch": 10,
+      "dinner": 5,
+      "snack": 3
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 9,
+      "hot": 4,
+      "pleasant": 7
+    },
+    "dayScore": {
+      "weekday": 5,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Chickpeas (2 cups, soaked)",
+      "Onions (2 large)",
+      "Tomatoes (3 medium)",
+      "Ginger-garlic paste (2 tbsp)",
+      "Chole masala (2 tbsp)",
+      "All-purpose flour (2 cups)",
+      "Yogurt (1/4 cup)",
+      "Oil for deep frying"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/BUjqGVNno0Y",
+    "steps": [
+      "Pressure cook chickpeas with tea bag until soft",
+      "Sauté onions, ginger-garlic paste, add tomatoes",
+      "Add chole masala and cooked chickpeas, simmer",
+      "Knead flour with yogurt and water into soft dough",
+      "Roll into circles, deep fry until puffed and golden",
+      "Serve hot chole with bhature",
+      "Garnish with onions and green chutney"
+    ]
+  },
+  {
+    "id": "veg-biryani",
+    "name": "Vegetable Biryani",
+    "description": "Aromatic rice with mixed vegetables and spices",
+    "image": "assets/images/veg-biryani.jpg",
+    "reason": {
+      "lunch": "Complete one-pot meal for lunch",
+      "weekend": "Special weekend lunch with family",
+      "pleasant": "Fragrant and flavorful for any occasion"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 7,
+      "hot": 6,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Basmati rice (2 cups)",
+      "Mixed vegetables (2 cups)",
+      "Onions (2 large, sliced)",
+      "Yogurt (1/2 cup)",
+      "Ginger-garlic paste (2 tbsp)",
+      "Biryani masala (2 tbsp)",
+      "Saffron (pinch)",
+      "Ghee (3 tbsp)",
+      "Mint and coriander leaves"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/pXd-W_a9ZlA",
+    "steps": [
+      "Soak rice for 30 minutes, parboil with whole spices",
+      "Fry onions until golden brown, set aside half",
+      "Sauté vegetables with ginger-garlic paste and biryani masala",
+      "Layer rice and vegetables in pot",
+      "Top with fried onions, saffron milk, and ghee",
+      "Cover and cook on low heat for 20 minutes (dum)",
+      "Garnish with mint and serve with raita"
+    ]
+  },
+  {
+    "id": "aloo-paratha",
+    "name": "Aloo Paratha",
+    "description": "Stuffed potato flatbread",
+    "image": "assets/images/aloo-paratha.jpg",
+    "reason": {
+      "morning": "Hearty North Indian breakfast",
+      "cold": "Warm and filling for cold mornings",
+      "weekday": "Quick and satisfying breakfast"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 7,
+      "dinner": 6,
+      "snack": 4
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 10,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Whole wheat flour (2 cups)",
+      "Potatoes (4 medium, boiled)",
+      "Green chilies (2, chopped)",
+      "Coriander leaves (2 tbsp)",
+      "Cumin powder (1 tsp)",
+      "Red chili powder (1/2 tsp)",
+      "Ghee or butter",
+      "Salt to taste"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/R8jQj4KK87A",
+    "steps": [
+      "Mash boiled potatoes with spices and coriander",
+      "Knead wheat flour into soft dough",
+      "Roll dough into small circles",
+      "Place potato filling, seal and roll again",
+      "Cook on hot tawa with ghee until golden spots appear",
+      "Flip and cook other side",
+      "Serve hot with yogurt, pickle, and butter"
+    ]
+  },
+  {
+    "id": "pav-bhaji",
+    "name": "Pav Bhaji",
+    "description": "Spicy mashed vegetable curry with buttered buns",
+    "image": "assets/images/pav-bhaji.jpg",
+    "reason": {
+      "evening": "Mumbai street food favorite for evening",
+      "rainy": "Comfort food perfect for rainy weather",
+      "weekend": "Fun weekend dinner option"
+    },
+    "timeScore": {
+      "breakfast": 3,
+      "lunch": 7,
+      "dinner": 10,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 10,
+      "cold": 8,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Potatoes (3 large, boiled)",
+      "Mixed vegetables (2 cups)",
+      "Onions (2 medium)",
+      "Tomatoes (3 medium)",
+      "Pav bhaji masala (3 tbsp)",
+      "Butter (100g)",
+      "Pav buns (8)",
+      "Lemon and coriander for garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/qFTLxT8wEOk",
+    "steps": [
+      "Boil and mash all vegetables",
+      "Sauté onions and tomatoes with butter",
+      "Add pav bhaji masala and mashed vegetables",
+      "Cook and mash continuously, add water for consistency",
+      "Toast pav with butter on tawa",
+      "Serve bhaji topped with butter",
+      "Garnish with onions, lemon, and coriander"
+    ]
+  },
+  {
+    "id": "idli-sambar",
+    "name": "Idli Sambar",
+    "description": "Steamed rice cakes with lentil vegetable stew",
+    "image": "assets/images/idli-sambar.jpg",
+    "reason": {
+      "morning": "Light and healthy South Indian breakfast",
+      "weekday": "Nutritious start to your workday",
+      "hot": "Light and easy to digest in warm weather"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 5,
+      "dinner": 6,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 6,
+      "hot": 9,
+      "pleasant": 10
+    },
+    "dayScore": {
+      "weekday": 10,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Idli batter (2 cups)",
+      "Toor dal (1 cup)",
+      "Mixed vegetables (1 cup)",
+      "Tamarind (small lemon-sized)",
+      "Sambar powder (2 tbsp)",
+      "Mustard seeds (1 tsp)",
+      "Curry leaves (10-12)",
+      "Asafoetida (pinch)"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/yk7HXbUjqKE",
+    "steps": [
+      "Steam idli batter in idli maker for 10-12 minutes",
+      "Pressure cook dal and vegetables until soft",
+      "Add tamarind water and sambar powder, boil",
+      "Temper mustard seeds, curry leaves, asafoetida",
+      "Add tempering to sambar",
+      "Serve hot idlis with sambar",
+      "Accompany with coconut chutney"
+    ]
+  }
+]

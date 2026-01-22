@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Decyd - Eliminate food decision fatigue. Get instant, context-aware meal suggestions.">
+    <meta name="theme-color" content="#8B2500">
+    <title>Decyd - What Should You Eat Now?</title>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main App Container -->
+    <div id="app" class="app">
+
+        <!-- Loading State -->
+        <div id="loading" class="loading-screen">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">Finding your perfect meal...</p>
+            </div>
+        </div>
+
+        <!-- Main Recommendation View -->
+        <div id="recommendation-view" class="view recommendation-view hidden">
+            <header class="app-header">
+                <div class="logo">
+                    <h1>Decyd</h1>
+                </div>
+                <div class="context-info">
+                    <span id="context-badge" class="context-badge"></span>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <h2 class="view-title">What you should eat now</h2>
+
+                <!-- Primary Food Card -->
+                <div id="primary-card" class="food-card">
+                    <div class="food-image-container">
+                        <img id="food-image" class="food-image" src="" alt="">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="food-details">
+                        <span id="food-cuisine" class="food-cuisine-badge"></span>
+                        <h3 id="food-name" class="food-name"></h3>
+                        <p id="food-reason" class="food-reason"></p>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="order-btn" class="btn btn-primary">
+                        <span class="btn-icon">🛵</span>
+                        <span>Order This</span>
+                    </button>
+                    <button id="make-btn" class="btn btn-secondary">
+                        <span class="btn-icon">👨‍🍳</span>
+                        <span>Make This</span>
+                    </button>
+                </div>
+
+                <!-- Backup Suggestion Toggle -->
+                <div class="backup-toggle">
+                    <button id="show-backup-btn" class="backup-btn">
+                        Not feeling it? <span class="backup-link">See backup option</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Order Flow View -->
+        <div id="order-view" class="view order-view hidden">
+            <header class="view-header">
+                <button id="back-from-order" class="back-btn">← Back</button>
+                <h2 class="view-title-small">Order <span id="order-dish-name"></span></h2>
+            </header>
+
+            <main class="main-content">
+                <div class="order-options">
+                    <h3 class="section-title">Choose your delivery app</h3>
+                    <div class="delivery-apps">
+                        <a id="swiggy-link" class="delivery-app-card" target="_blank" rel="noopener">
+                            <div class="app-icon swiggy-icon">🍔</div>
+                            <div class="app-info">
+                                <h4>Swiggy</h4>
+                                <p>Fast delivery</p>
+                            </div>
+                        </a>
+                        <a id="zomato-link" class="delivery-app-card" target="_blank" rel="noopener">
+                            <div class="app-icon zomato-icon">🍕</div>
+                            <div class="app-info">
+                                <h4>Zomato</h4>
+                                <p>Wide selection</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Make Flow View -->
+        <div id="make-view" class="view make-view hidden">
+            <header class="view-header">
+                <button id="back-from-make" class="back-btn">← Back</button>
+                <h2 class="view-title-small">Make <span id="make-dish-name"></span></h2>
+            </header>
+
+            <main class="main-content">
+                <div class="ingredients-section">
+                    <h3 class="section-title">Ingredients you'll need</h3>
+                    <ul id="ingredients-list" class="ingredients-list"></ul>
+
+                    <button id="buy-ingredients-btn" class="btn btn-primary btn-full">
+                        <span class="btn-icon">🛒</span>
+                        <span>Buy Missing Items</span>
+                    </button>
+                </div>
+
+                <div class="recipe-section">
+                    <button id="show-recipe-btn" class="btn btn-secondary btn-full">
+                        <span>I have everything → Show Recipe</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Recipe View -->
+        <div id="recipe-view" class="view recipe-view hidden">
+            <header class="view-header">
+                <button id="back-from-recipe" class="back-btn">← Back</button>
+                <h2 class="view-title-small">Recipe: <span id="recipe-dish-name"></span></h2>
+            </header>
+
+            <main class="main-content">
+                <!-- Video Section -->
+                <div class="video-section">
+                    <h3 class="section-title">Watch how it's made</h3>
+                    <div class="video-container">
+                        <iframe id="recipe-video" width="100%" height="315" src="" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Steps Section -->
+                <div class="steps-section">
+                    <h3 class="section-title">Steps</h3>
+                    <ol id="recipe-steps" class="recipe-steps"></ol>
+                </div>
+            </main>
+        </div>
+
+        <!-- Shopping Options Modal -->
+        <div id="shopping-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button id="close-modal" class="modal-close">×</button>
+                <h3 class="modal-title">Buy ingredients from</h3>
+                <div class="shopping-apps">
+                    <a id="blinkit-link" class="shopping-app-card" target="_blank" rel="noopener">
+                        <div class="app-icon blinkit-icon">⚡</div>
+                        <div class="app-info">
+                            <h4>Blinkit</h4>
+                            <p>10-minute delivery</p>
+                        </div>
+                    </a>
+                    <a id="instamart-link" class="shopping-app-card" target="_blank" rel="noopener">
+                        <div class="app-icon instamart-icon">🛍️</div>
+                        <div class="app-info">
+                            <h4>Instamart</h4>
+                            <p>Quick commerce</p>
+                        </div>
+                    </a>
+                    <a id="zepto-link" class="shopping-app-card" target="_blank" rel="noopener">
+                        <div class="app-icon zepto-icon">⚡</div>
+                        <div class="app-info">
+                            <h4>Zepto</h4>
+                            <p>Fast delivery</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/auth-manager.js"></script>
+    <script src="js/utils/deep-links.js"></script>
+    <script src="js/utils/animations.js"></script>
+    <script src="js/context-detector.js"></script>
+    <script src="js/recommendation-engine.js"></script>
+    <script src="js/user-tracker.js"></script>
+    <script src="js/components/food-card.js"></script>
+    <script src="js/components/action-buttons.js"></script>
+    <script src="js/components/ingredient-list.js"></script>
+    <script src="js/components/recipe-view.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2916 @@
+[
+  {
+    "id": "butter-chicken",
+    "name": "Butter Chicken",
+    "cuisine": "Indian",
+    "description": "Rich creamy North Indian classic",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 7,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 8,
+      "hot": 3,
+      "pleasant": 7
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "chicken-tikka-masala",
+    "name": "Chicken Tikka Masala",
+    "cuisine": "Indian",
+    "description": "Grilled chicken in spiced tomato sauce",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 9,
+      "hot": 4,
+      "pleasant": 7
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "palak-paneer",
+    "name": "Palak Paneer",
+    "cuisine": "Indian",
+    "description": "Cottage cheese in spinach gravy",
+    "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 8,
+      "hot": 6,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "dal-makhani",
+    "name": "Dal Makhani",
+    "cuisine": "Indian",
+    "description": "Creamy black lentils",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 10,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "rogan-josh",
+    "name": "Rogan Josh",
+    "cuisine": "Indian",
+    "description": "Kashmiri lamb curry",
+    "image": "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 7,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 10,
+      "hot": 3,
+      "pleasant": 7
+    },
+    "dayScore": {
+      "weekday": 5,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "tandoori-chicken",
+    "name": "Tandoori Chicken",
+    "cuisine": "Indian",
+    "description": "Clay oven roasted chicken",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "chole-bhature",
+    "name": "Chole Bhature",
+    "cuisine": "Indian",
+    "description": "Spicy chickpeas with fried bread",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 9,
+      "lunch": 10,
+      "dinner": 5,
+      "snack": 3
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 9,
+      "hot": 4,
+      "pleasant": 7
+    },
+    "dayScore": {
+      "weekday": 5,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "aloo-gobi",
+    "name": "Aloo Gobi",
+    "cuisine": "Indian",
+    "description": "Potato and cauliflower curry",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 9,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "rajma",
+    "name": "Rajma",
+    "cuisine": "Indian",
+    "description": "Red kidney bean curry",
+    "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 9,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "kadai-paneer",
+    "name": "Kadai Paneer",
+    "cuisine": "Indian",
+    "description": "Cottage cheese in spicy tomato gravy",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "masala-dosa",
+    "name": "Masala Dosa",
+    "cuisine": "Indian",
+    "description": "Crispy rice crepe with potato filling",
+    "image": "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 6,
+      "dinner": 4,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 6,
+      "cold": 5,
+      "hot": 7,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "idli-sambar",
+    "name": "Idli Sambar",
+    "cuisine": "Indian",
+    "description": "Steamed rice cakes with lentil stew",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 5,
+      "dinner": 6,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 6,
+      "hot": 9,
+      "pleasant": 10
+    },
+    "dayScore": {
+      "weekday": 10,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "vada-sambar",
+    "name": "Medu Vada",
+    "cuisine": "Indian",
+    "description": "Crispy lentil donuts",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 6,
+      "dinner": 5,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 6,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "uttapam",
+    "name": "Uttapam",
+    "cuisine": "Indian",
+    "description": "Thick rice pancake with toppings",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 7,
+      "dinner": 5,
+      "snack": 6
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 6,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "hyderabadi-biryani",
+    "name": "Hyderabadi Biryani",
+    "cuisine": "Indian",
+    "description": "Aromatic rice with meat",
+    "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 8,
+      "hot": 6,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "fish-curry",
+    "name": "Kerala Fish Curry",
+    "cuisine": "Indian",
+    "description": "Coconut-based fish curry",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 7,
+      "hot": 7,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "appam",
+    "name": "Appam with Stew",
+    "cuisine": "Indian",
+    "description": "Rice pancakes with coconut stew",
+    "image": "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 7,
+      "dinner": 8,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 6,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "pongal",
+    "name": "Ven Pongal",
+    "cuisine": "Indian",
+    "description": "Savory rice and lentil porridge",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Indian breakfast",
+      "evening": "Delicious Indian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Indian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 6,
+      "dinner": 5,
+      "snack": 4
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 8,
+      "hot": 7,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "margherita-pizza",
+    "name": "Margherita Pizza",
+    "cuisine": "Italian",
+    "description": "Classic tomato, mozzarella, basil",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "spaghetti-carbonara",
+    "name": "Spaghetti Carbonara",
+    "cuisine": "Italian",
+    "description": "Pasta with eggs, cheese, bacon",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 8,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "lasagna",
+    "name": "Lasagna",
+    "cuisine": "Italian",
+    "description": "Layered pasta with meat sauce",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 9,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "risotto",
+    "name": "Mushroom Risotto",
+    "cuisine": "Italian",
+    "description": "Creamy rice with mushrooms",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 9,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "fettuccine-alfredo",
+    "name": "Fettuccine Alfredo",
+    "cuisine": "Italian",
+    "description": "Pasta in creamy parmesan sauce",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 8,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "penne-arrabbiata",
+    "name": "Penne Arrabbiata",
+    "cuisine": "Italian",
+    "description": "Spicy tomato pasta",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 7,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "caprese-salad",
+    "name": "Caprese Salad",
+    "cuisine": "Italian",
+    "description": "Tomato, mozzarella, basil",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 5,
+      "lunch": 9,
+      "dinner": 7,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 5,
+      "cold": 5,
+      "hot": 10,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "tiramisu",
+    "name": "Tiramisu",
+    "cuisine": "Italian",
+    "description": "Coffee-flavored dessert",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Italian breakfast",
+      "evening": "Delicious Italian dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Italian dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 5,
+      "dinner": 8,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "kung-pao-chicken",
+    "name": "Kung Pao Chicken",
+    "cuisine": "Chinese",
+    "description": "Spicy stir-fried chicken",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Chinese breakfast",
+      "evening": "Delicious Chinese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Chinese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 7,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "sweet-sour-pork",
+    "name": "Sweet and Sour Pork",
+    "cuisine": "Chinese",
+    "description": "Crispy pork in tangy sauce",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Chinese breakfast",
+      "evening": "Delicious Chinese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Chinese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "fried-rice",
+    "name": "Chicken Fried Rice",
+    "cuisine": "Chinese",
+    "description": "Wok-tossed rice with chicken",
+    "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Chinese breakfast",
+      "evening": "Delicious Chinese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Chinese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "chow-mein",
+    "name": "Chow Mein",
+    "cuisine": "Chinese",
+    "description": "Stir-fried noodles",
+    "image": "https://images.unsplash.com/photo-1563379091339-03b27150d3ad?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Chinese breakfast",
+      "evening": "Delicious Chinese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Chinese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "dim-sum",
+    "name": "Dim Sum Platter",
+    "cuisine": "Chinese",
+    "description": "Assorted steamed dumplings",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Chinese breakfast",
+      "evening": "Delicious Chinese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Chinese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 8,
+      "lunch": 10,
+      "dinner": 5,
+      "snack": 9
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "peking-duck",
+    "name": "Peking Duck",
+    "cuisine": "Chinese",
+    "description": "Crispy roasted duck",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Chinese breakfast",
+      "evening": "Delicious Chinese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Chinese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 7,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 5,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "tacos-al-pastor",
+    "name": "Tacos Al Pastor",
+    "cuisine": "Mexican",
+    "description": "Marinated pork tacos",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mexican breakfast",
+      "evening": "Delicious Mexican dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mexican dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "burrito-bowl",
+    "name": "Burrito Bowl",
+    "cuisine": "Mexican",
+    "description": "Rice, beans, meat, toppings",
+    "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mexican breakfast",
+      "evening": "Delicious Mexican dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mexican dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "quesadilla",
+    "name": "Cheese Quesadilla",
+    "cuisine": "Mexican",
+    "description": "Grilled cheese tortilla",
+    "image": "https://images.unsplash.com/photo-1599974579446-f1d79a2b8e8f?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mexican breakfast",
+      "evening": "Delicious Mexican dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mexican dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 5,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "enchiladas",
+    "name": "Chicken Enchiladas",
+    "cuisine": "Mexican",
+    "description": "Rolled tortillas with sauce",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mexican breakfast",
+      "evening": "Delicious Mexican dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mexican dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 8,
+      "hot": 7,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "guacamole",
+    "name": "Fresh Guacamole",
+    "cuisine": "Mexican",
+    "description": "Mashed avocado dip",
+    "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mexican breakfast",
+      "evening": "Delicious Mexican dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mexican dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 5,
+      "lunch": 8,
+      "dinner": 7,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 6,
+      "cold": 6,
+      "hot": 10,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "sushi-platter",
+    "name": "Sushi Platter",
+    "cuisine": "Japanese",
+    "description": "Assorted fresh sushi",
+    "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Japanese breakfast",
+      "evening": "Delicious Japanese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Japanese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 10,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 6,
+      "cold": 6,
+      "hot": 9,
+      "pleasant": 10
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "ramen",
+    "name": "Tonkotsu Ramen",
+    "cuisine": "Japanese",
+    "description": "Rich pork bone broth noodles",
+    "image": "https://images.unsplash.com/photo-1569718212165-3b8278d5f624?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Japanese breakfast",
+      "evening": "Delicious Japanese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Japanese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 10,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "tempura",
+    "name": "Shrimp Tempura",
+    "cuisine": "Japanese",
+    "description": "Crispy battered shrimp",
+    "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Japanese breakfast",
+      "evening": "Delicious Japanese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Japanese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "teriyaki-chicken",
+    "name": "Chicken Teriyaki",
+    "cuisine": "Japanese",
+    "description": "Glazed grilled chicken",
+    "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Japanese breakfast",
+      "evening": "Delicious Japanese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Japanese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "udon",
+    "name": "Udon Noodle Soup",
+    "cuisine": "Japanese",
+    "description": "Thick wheat noodles in broth",
+    "image": "https://images.unsplash.com/photo-1569718212165-3b8278d5f624?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Japanese breakfast",
+      "evening": "Delicious Japanese dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Japanese dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 6
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 9,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "pad-thai",
+    "name": "Pad Thai",
+    "cuisine": "Thai",
+    "description": "Stir-fried rice noodles",
+    "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Thai breakfast",
+      "evening": "Delicious Thai dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Thai dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "green-curry",
+    "name": "Thai Green Curry",
+    "cuisine": "Thai",
+    "description": "Coconut curry with vegetables",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Thai breakfast",
+      "evening": "Delicious Thai dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Thai dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 8,
+      "hot": 7,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "tom-yum",
+    "name": "Tom Yum Soup",
+    "cuisine": "Thai",
+    "description": "Spicy sour shrimp soup",
+    "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Thai breakfast",
+      "evening": "Delicious Thai dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Thai dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 9,
+      "hot": 7,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "pad-see-ew",
+    "name": "Pad See Ew",
+    "cuisine": "Thai",
+    "description": "Stir-fried wide noodles",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Thai breakfast",
+      "evening": "Delicious Thai dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Thai dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 7
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "classic-burger",
+    "name": "Classic Cheeseburger",
+    "cuisine": "American",
+    "description": "Beef patty with cheese",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+    "reason": {
+      "morning": "Perfect American breakfast",
+      "evening": "Delicious American dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming American dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 9,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "bbq-ribs",
+    "name": "BBQ Ribs",
+    "cuisine": "American",
+    "description": "Slow-cooked pork ribs",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+    "reason": {
+      "morning": "Perfect American breakfast",
+      "evening": "Delicious American dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming American dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 7,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "mac-cheese",
+    "name": "Mac and Cheese",
+    "cuisine": "American",
+    "description": "Creamy cheese pasta",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+    "reason": {
+      "morning": "Perfect American breakfast",
+      "evening": "Delicious American dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming American dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 8,
+      "cold": 9,
+      "hot": 6,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "fried-chicken",
+    "name": "Fried Chicken",
+    "cuisine": "American",
+    "description": "Crispy buttermilk chicken",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+    "reason": {
+      "morning": "Perfect American breakfast",
+      "evening": "Delicious American dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming American dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 9,
+      "dinner": 10,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "greek-salad",
+    "name": "Greek Salad",
+    "cuisine": "Mediterranean",
+    "description": "Fresh vegetables with feta",
+    "image": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mediterranean breakfast",
+      "evening": "Delicious Mediterranean dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mediterranean dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 5,
+      "lunch": 10,
+      "dinner": 8,
+      "snack": 7
+    },
+    "weatherScore": {
+      "rainy": 5,
+      "cold": 5,
+      "hot": 10,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "falafel",
+    "name": "Falafel Wrap",
+    "cuisine": "Mediterranean",
+    "description": "Crispy chickpea fritters",
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mediterranean breakfast",
+      "evening": "Delicious Mediterranean dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mediterranean dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 5,
+      "lunch": 10,
+      "dinner": 8,
+      "snack": 9
+    },
+    "weatherScore": {
+      "rainy": 6,
+      "cold": 6,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "hummus",
+    "name": "Hummus Platter",
+    "cuisine": "Mediterranean",
+    "description": "Chickpea dip with pita",
+    "image": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mediterranean breakfast",
+      "evening": "Delicious Mediterranean dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mediterranean dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 5,
+      "lunch": 9,
+      "dinner": 7,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 6,
+      "cold": 6,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 8,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "shawarma",
+    "name": "Chicken Shawarma",
+    "cuisine": "Mediterranean",
+    "description": "Spiced rotisserie chicken wrap",
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Mediterranean breakfast",
+      "evening": "Delicious Mediterranean dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Mediterranean dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 10,
+      "dinner": 9,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 9,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 9,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "croissant",
+    "name": "Butter Croissant",
+    "cuisine": "French",
+    "description": "Flaky buttery pastry",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80",
+    "reason": {
+      "morning": "Perfect French breakfast",
+      "evening": "Delicious French dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming French dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 10,
+      "lunch": 5,
+      "dinner": 0,
+      "snack": 8
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "french-onion-soup",
+    "name": "French Onion Soup",
+    "cuisine": "French",
+    "description": "Caramelized onion soup",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+    "reason": {
+      "morning": "Perfect French breakfast",
+      "evening": "Delicious French dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming French dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 5
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 10,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "coq-au-vin",
+    "name": "Coq au Vin",
+    "cuisine": "French",
+    "description": "Chicken braised in wine",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80",
+    "reason": {
+      "morning": "Perfect French breakfast",
+      "evening": "Delicious French dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming French dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 7,
+      "dinner": 10,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 9,
+      "cold": 9,
+      "hot": 5,
+      "pleasant": 8
+    },
+    "dayScore": {
+      "weekday": 5,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "ratatouille",
+    "name": "Ratatouille",
+    "cuisine": "French",
+    "description": "Proven\u00e7al vegetable stew",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+    "reason": {
+      "morning": "Perfect French breakfast",
+      "evening": "Delicious French dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming French dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 8,
+      "dinner": 9,
+      "snack": 0
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 8
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "chocolate-cake",
+    "name": "Chocolate Cake",
+    "cuisine": "Dessert",
+    "description": "Rich chocolate layer cake",
+    "image": "https://images.unsplash.com/photo-1578985545082-7a6397d0d8b7?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Dessert breakfast",
+      "evening": "Delicious Dessert dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Dessert dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 5,
+      "dinner": 7,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "ice-cream",
+    "name": "Vanilla Ice Cream",
+    "cuisine": "Dessert",
+    "description": "Creamy vanilla ice cream",
+    "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Dessert breakfast",
+      "evening": "Delicious Dessert dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Dessert dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 3,
+      "lunch": 7,
+      "dinner": 8,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 5,
+      "cold": 5,
+      "hot": 10,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "cheesecake",
+    "name": "New York Cheesecake",
+    "cuisine": "Dessert",
+    "description": "Classic creamy cheesecake",
+    "image": "https://images.unsplash.com/photo-1524351199161-64d3e5efe8c8?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Dessert breakfast",
+      "evening": "Delicious Dessert dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Dessert dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 0,
+      "lunch": 5,
+      "dinner": 8,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 6,
+      "weekend": 10
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  },
+  {
+    "id": "brownie",
+    "name": "Chocolate Brownie",
+    "cuisine": "Dessert",
+    "description": "Fudgy chocolate brownie",
+    "image": "https://images.unsplash.com/photo-1578985545082-7a6397d0d8b7?w=800&q=80",
+    "reason": {
+      "morning": "Perfect Dessert breakfast",
+      "evening": "Delicious Dessert dinner",
+      "rainy": "Comforting for rainy weather",
+      "cold": "Warming Dessert dish",
+      "hot": "Light and refreshing",
+      "pleasant": "Perfect for pleasant weather",
+      "weekend": "Special weekend treat",
+      "weekday": "Quick weekday meal"
+    },
+    "timeScore": {
+      "breakfast": 3,
+      "lunch": 6,
+      "dinner": 7,
+      "snack": 10
+    },
+    "weatherScore": {
+      "rainy": 7,
+      "cold": 7,
+      "hot": 8,
+      "pleasant": 9
+    },
+    "dayScore": {
+      "weekday": 7,
+      "weekend": 9
+    },
+    "ingredients": [
+      "Main ingredient 1",
+      "Main ingredient 2",
+      "Spices and seasonings",
+      "Garnish"
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "steps": [
+      "Prepare all ingredients",
+      "Cook main components",
+      "Combine and season",
+      "Finish cooking",
+      "Plate and serve"
+    ]
+  }
+]
