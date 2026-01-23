@@ -250,6 +250,7 @@ img {
 }
 
 .logo h1 {
+    font-family: var(--font-logo);
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-extrabold);
     background: var(--gradient-primary);
