@@ -4,7 +4,7 @@
 
 A premium web application that provides instant, context-aware meal suggestions with immediate action paths for ordering or cooking.
 
-![Decyd Logo](assets/images/butter-chicken.jpg)
+![Decyd Logo](https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?q=80&w=800&auto=format&fit=crop)
 
 ## 🎯 Core Concept
 
@@ -14,31 +14,28 @@ Decyd aggressively reduces food decision fatigue by:
 - Offering **TWO clear actions** (Order or Make)
 - **ZERO overwhelming choices**
 
-## ✨ Features
+## ✨ New Premium Features
+
+### 🌟 Immersive Landing Page
+- **Stunning Hero Section**: Real-time rotating food dish with a modern morphing splash shape and slide-in animations.
+- **Interactive Feature Cards**: A beautiful horizontal stacked card layout that drops from above and scatters on scroll.
+- **Premium Choreography**: Synchronized entrance animations for navbar, headings, and CTAs.
 
 ### 🧠 Smart Recommendations
-- **Context-aware**: Considers time of day, day of week, and weather
-- **Learning algorithm**: Adapts to your preferences over time
-- **Recency tracking**: Avoids showing the same food repeatedly
+- **Context-aware**: Considers time of day, day of week, and weather.
+- **Curated Database**: 62+ verified high-quality dishes with professional food photography from Unsplash.
+- **Location-Based Logic**: Prioritizes local cuisines based on smart preference tracking.
 
-### 🍽️ Instant Action Paths
+### 🎨 Design System
+- **Curated Palette**: Warm orange gradients (`#8B2500` → `#E85D3C`) for an Appalachian food vibe.
+- **Typography**: 
+  - **DynaPuff**: Bubbly, energetic brand font (Logo).
+  - **Carter One**: Bold, playful display font (Headings).
+  - **Delius**: Handwriting-inspired body font (Content).
+- **Responsive**: Pixel-perfect layout for Mobile, Tablet, and Desktop.
 
-**Order Flow**
-- One-click access to Swiggy and Zomato
-- Pre-filled search with dish name
-
-**Make Flow**
-- Complete ingredient list
-- Quick commerce integration (Blinkit, Instamart, Zepto)
-- Embedded YouTube cooking video
-- Concise step-by-step recipe (max 7 steps)
-
-### 🎨 Premium Design
-- Ultra high-quality food photography
-- Warm, food-inspired color palette
-- Modern typography (Outfit + Inter)
-- Smooth, intentional animations
-- Fully responsive (mobile-first)
+## 🚀 Live on GitHub
+The project is officially live at [https://github.com/iomakarsingh/Decyd](https://github.com/iomakarsingh/Decyd)
 
 ## 🚀 Quick Start
 
@@ -46,13 +43,13 @@ Decyd aggressively reduces food decision fatigue by:
 
 ```bash
 # Navigate to project directory
-cd /home/omkarsingh/Desktop/Projects/Decyd
+cd Decyd
 
 # Start local server
 python3 -m http.server 8000
 
 # Open in browser
-# http://localhost:8000
+# http://localhost:8000/home.html
 ```
 
 ### Requirements
