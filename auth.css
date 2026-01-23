@@ -64,7 +64,7 @@
 }
 
 .auth-logo {
-    font-family: var(--font-display);
+    font-family: var(--font-logo);
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-extrabold);
     margin-bottom: var(--spacing-lg);

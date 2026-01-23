@@ -48,7 +48,7 @@
 }
 
 .nav-logo h1 {
-    font-family: var(--font-display);
+    font-family: var(--font-logo);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-extrabold);
     background: var(--gradient-primary);
