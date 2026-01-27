@@ -90,4 +90,60 @@ document.addEventListener('DOMContentLoaded', () => {
     if (howItWorksSection) {
         stepsObserver.observe(howItWorksSection);
     }
+
+    // Intersection Observer for CTA section
+    const ctaObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const title = entry.target.querySelector('.cta-title');
+                const subtitle = entry.target.querySelector('.cta-subtitle');
+                const buttons = entry.target.querySelector('.cta-buttons');
+                const note = entry.target.querySelector('.cta-note');
+
+                if (title) title.classList.add('animate');
+                if (subtitle) subtitle.classList.add('animate');
+                if (buttons) buttons.classList.add('animate');
+                if (note) note.classList.add('animate');
+
+                ctaObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px'
+    });
+
+    // Observe CTA section
+    const ctaSection = document.querySelector('.cta-section');
+    if (ctaSection) {
+        ctaObserver.observe(ctaSection);
+    }
+
+    // Intersection Observer for Footer
+    const footerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const brandTitle = entry.target.querySelector('.footer-brand h3');
+                const brandText = entry.target.querySelector('.footer-brand p');
+                const columns = entry.target.querySelectorAll('.footer-column');
+                const bottom = entry.target.querySelector('.footer-bottom');
+
+                if (brandTitle) brandTitle.classList.add('animate');
+                if (brandText) brandText.classList.add('animate');
+                columns.forEach(col => col.classList.add('animate'));
+                if (bottom) bottom.classList.add('animate');
+
+                footerObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px'
+    });
+
+    // Observe Footer
+    const footer = document.querySelector('.footer');
+    if (footer) {
+        footerObserver.observe(footer);
+    }
 });
