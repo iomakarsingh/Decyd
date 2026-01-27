@@ -857,25 +857,46 @@
 .testimonials {
     background: white;
     padding: var(--spacing-3xl) 0;
+    overflow: hidden;
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
     gap: var(--spacing-xl);
+    animation: scrollTestimonials 30s linear infinite;
+    width: max-content;
+}
+
+.testimonials-grid:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollTestimonials {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% / 2));
+    }
 }
 
 .testimonial-card {
+    min-width: 400px;
+    max-width: 400px;
     padding: var(--spacing-2xl);
     background: var(--color-warm-white);
     border-radius: var(--radius-lg);
     border: 2px solid var(--color-cream-dark);
-    transition: all var(--transition-base);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    flex-shrink: 0;
 }
 
 .testimonial-card:hover {
     border-color: var(--color-primary);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 60px rgba(199, 62, 29, 0.3);
+    transform: translateY(-15px) scale(1.05);
+    z-index: 10;
 }
 
 .testimonial-stars {
