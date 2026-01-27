@@ -329,7 +329,7 @@
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
     font-weight: var(--font-weight-extrabold);
     line-height: 1.1;
     color: white;
@@ -466,11 +466,21 @@
     font-weight: var(--font-weight-extrabold);
     color: var(--color-text-primary);
     margin-bottom: var(--spacing-md);
+    opacity: 0;
+}
+
+.section-title.animate {
+    animation: fadeSlideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .section-subtitle {
     font-size: var(--font-size-xl);
     color: var(--color-text-secondary);
+    opacity: 0;
+}
+
+.section-subtitle.animate {
+    animation: fadeSlideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
 }
 
 /* ==========================================
@@ -479,6 +489,14 @@
 .features {
     background: white;
     padding: var(--spacing-3xl) 0;
+}
+
+.features .section-title {
+    color: var(--color-text-primary);
+}
+
+.features .section-subtitle {
+    color: var(--color-text-secondary);
 }
 
 .features-grid {
@@ -711,6 +729,40 @@
     min-width: 250px;
     max-width: 300px;
     text-align: center;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.step.animate:nth-child(1) {
+    animation: slideInFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.step.animate:nth-child(2) {
+    animation: slideInFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+}
+
+.step.animate:nth-child(3) {
+    animation: slideInFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s forwards;
+}
+
+.step.animate:nth-child(4) {
+    animation: slideInFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
+}
+
+.step.animate:nth-child(5) {
+    animation: slideInFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .step-number {
@@ -763,6 +815,27 @@
     font-size: var(--font-size-4xl);
     color: white;
     font-weight: var(--font-weight-bold);
+    opacity: 0;
+}
+
+.step-arrow.animate {
+    animation: arrowPulse 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s forwards;
+}
+
+@keyframes arrowPulse {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .step-title {

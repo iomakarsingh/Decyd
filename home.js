@@ -39,7 +39,59 @@ document.addEventListener('DOMContentLoaded', () => {
         cardObserver.observe(featuresSection);
     }
 
-    // Add scroll animations for other elements
+    // Intersection Observer for section headers
+    const headerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const title = entry.target.querySelector('.section-title');
+                const subtitle = entry.target.querySelector('.section-subtitle');
+
+                if (title) title.classList.add('animate');
+                if (subtitle) subtitle.classList.add('animate');
+
+                headerObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px'
+    });
+
+    // Observe all section headers
+    document.querySelectorAll('.section-header').forEach(header => {
+        headerObserver.observe(header);
+    });
+
+    // Intersection Observer for How It Works steps
+    const stepsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const steps = entry.target.querySelectorAll('.step');
+                const arrows = entry.target.querySelectorAll('.step-arrow');
+
+                steps.forEach(step => {
+                    step.classList.add('animate');
+                });
+
+                arrows.forEach(arrow => {
+                    arrow.classList.add('animate');
+                });
+
+                stepsObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px'
+    });
+
+    // Observe the How It Works section
+    const howItWorksSection = document.querySelector('.how-it-works');
+    if (howItWorksSection) {
+        stepsObserver.observe(howItWorksSection);
+    }
+
+    // Add scroll animations for testimonials
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -100px 0px'
@@ -54,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe steps and testimonials
-    document.querySelectorAll('.step, .testimonial-card').forEach(el => {
+    // Observe testimonials
+    document.querySelectorAll('.testimonial-card').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
