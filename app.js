@@ -47,6 +47,9 @@ class DecydApp {
         // Display user name in header
         this.displayUserInfo();
 
+        // Check and apply weekly memory decay
+        LearningEngine.checkAndApplyDecay();
+
         // Show loading screen
         this.showView('loading');
 
@@ -184,8 +187,13 @@ class DecydApp {
      * Handle Order button click
      */
     handleOrder() {
-        // Track order action
+        // Track order action with user tracker
         this.userTracker.trackOrder(this.currentFood.id, this.currentContext);
+
+        // Track with learning engine for profile adaptation
+        const timeOfDay = this._getCurrentTimeSlot();
+        LearningEngine.trackInteraction('primary_click', this.currentFood, timeOfDay);
+        LearningEngine.trackInteraction('order', this.currentFood, timeOfDay);
 
         // Update dish name in order view
         document.getElementById('order-dish-name').textContent = this.currentFood.name;
@@ -205,8 +213,13 @@ class DecydApp {
      * Handle Make button click
      */
     handleMake() {
-        // Track make action
+        // Track make action with user tracker
         this.userTracker.trackMake(this.currentFood.id, this.currentContext);
+
+        // Track with learning engine for profile adaptation
+        const timeOfDay = this._getCurrentTimeSlot();
+        LearningEngine.trackInteraction('primary_click', this.currentFood, timeOfDay);
+        LearningEngine.trackInteraction('make', this.currentFood, timeOfDay);
 
         // Update dish name in make view
         document.getElementById('make-dish-name').textContent = this.currentFood.name;
@@ -230,8 +243,12 @@ class DecydApp {
      * Handle backup suggestion toggle
      */
     handleBackup() {
-        // Track skip action
+        // Track skip action with user tracker
         this.userTracker.trackSkip(this.currentFood.id, this.currentContext);
+
+        // Track with learning engine (backup selection)
+        const timeOfDay = this._getCurrentTimeSlot();
+        LearningEngine.trackInteraction('backup_click', this.recommendations.backup, timeOfDay);
 
         // Swap to backup recommendation
         this.recommendationEngine.swapToPrimary();
@@ -306,6 +323,17 @@ class DecydApp {
     hideModal() {
         const modal = document.getElementById('shopping-modal');
         Animations.fadeOut(modal, 300);
+    }
+
+    /**
+     * Get current time slot for learning engine
+     */
+    _getCurrentTimeSlot() {
+        const hour = new Date().getHours();
+        if (hour >= 5 && hour < 11) return 'morning';
+        if (hour >= 11 && hour < 16) return 'lunch';
+        if (hour >= 16 && hour < 22) return 'evening';
+        return 'night';
     }
 }
 

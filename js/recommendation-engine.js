@@ -1,4 +1,7 @@
-// Recommendation Engine - Scores and selects food suggestions based on context and user preferences
+/**
+ * Enhanced Recommendation Engine with Adaptive Learning
+ * Scores dishes based on user profile, context, and behavioral patterns
+ */
 
 class RecommendationEngine {
     constructor(userTracker) {
@@ -25,23 +28,241 @@ class RecommendationEngine {
     }
 
     /**
-     * Get recommendations based on current context
+     * Get recommendations based on current context and user profile
      */
     async getRecommendations(context, userCountry = null) {
         if (this.foods.length === 0) {
             await this.loadFoods();
         }
 
-        // Score all foods based on context and user preferences
+        // Load user profile
+        const profile = UserProfile.load();
+        if (!profile) {
+            console.warn('No user profile found, using default scoring');
+            return this._getDefaultRecommendations(context, userCountry);
+        }
+
+        // Get current time-appropriate profile
+        const currentProfile = UserProfile.getCurrentProfile(profile);
+
+        // Score all foods based on adaptive algorithm
         const scoredFoods = this.foods.map(food => ({
             ...food,
-            score: this.calculateScore(food, context, userCountry)
+            score: this.calculateAdaptiveScore(food, currentProfile, profile, context, userCountry)
         }));
 
         // Sort by score (highest first)
         scoredFoods.sort((a, b) => b.score - a.score);
 
-        // Select primary and backup
+        // Select primary and backup (ensure they're different types)
+        this.currentRecommendations.primary = scoredFoods[0];
+        this.currentRecommendations.backup = this._selectBackup(scoredFoods, scoredFoods[0]);
+
+        return this.currentRecommendations;
+    }
+
+    /**
+     * Calculate adaptive score based on user profile and context
+     * Priority: Time > Weather > Behavior > Profile Weights
+     */
+    calculateAdaptiveScore(dish, currentProfile, fullProfile, context, userCountry) {
+        let score = 0;
+        const attrs = dish.attributes;
+
+        // 1. USER PROFILE WEIGHTS (Base score)
+        score += this._scoreProfileWeights(attrs, currentProfile);
+
+        // 2. CONTEXT MULTIPLIERS (HIGHEST PRIORITY)
+        score *= this._getContextMultiplier(attrs, context);
+
+        // 3. NOVELTY CAP (Prevent overwhelming adventurous dishes)
+        score *= this._getNoveltyCapMultiplier(attrs.novelty_level, fullProfile.novelty_cap);
+
+        // 4. ANTI-REPETITION PENALTY
+        score *= this._getRepetitionPenalty(dish, fullProfile.interactions.recentDishes);
+
+        // 5. RECENCY BONUS (Reward dishes not seen recently)
+        score *= this._getRecencyBonus(dish, fullProfile.interactions.recentDishes);
+
+        // 6. COUNTRY/CUISINE PREFERENCE (if available)
+        if (userCountry) {
+            score *= this._getCuisineMultiplier(dish.cuisine, userCountry);
+        }
+
+        return score;
+    }
+
+    /**
+     * Score based on user profile weights
+     */
+    _scoreProfileWeights(attrs, profile) {
+        let score = 0;
+
+        // Map attribute values to numeric scores
+        const comfortMap = { low: 0.2, medium: 0.5, high: 0.8 };
+        const noveltyMap = { safe: 0.2, moderate: 0.5, adventurous: 0.8 };
+        const effortMap = { quick: 0.8, medium: 0.5, heavy: 0.2 }; // Lower effort = higher score
+        const healthMap = { light: 0.2, normal: 0.5, indulgent: 0.8 };
+
+        // Apply profile weights to dish attributes
+        if (attrs.comfort_level) {
+            score += profile.comfort * comfortMap[attrs.comfort_level] * 10;
+        }
+        if (attrs.novelty_level) {
+            score += profile.novelty * noveltyMap[attrs.novelty_level] * 10;
+        }
+        if (attrs.effort) {
+            score += (1 - profile.effort) * effortMap[attrs.effort] * 10;
+        }
+        if (attrs.health_weight) {
+            score += profile.indulgent * healthMap[attrs.health_weight] * 10;
+        }
+
+        return score;
+    }
+
+    /**
+     * Get context multiplier (Time and Weather)
+     */
+    _getContextMultiplier(attrs, context) {
+        let multiplier = 1.0;
+
+        // TIME CONTEXT (1.5x if matches)
+        const currentTime = this._getCurrentTimeCategory();
+        if (attrs.time_fit && attrs.time_fit.includes(currentTime)) {
+            multiplier *= 1.5;
+        }
+
+        // WEATHER CONTEXT (1.3x if matches)
+        if (context.weather && attrs.weather_fit) {
+            const weatherMatch = this._matchWeather(context.weather, attrs.weather_fit);
+            if (weatherMatch) {
+                multiplier *= 1.3;
+            }
+        }
+
+        return multiplier;
+    }
+
+    /**
+     * Get current time category
+     */
+    _getCurrentTimeCategory() {
+        const hour = new Date().getHours();
+        if (hour >= 5 && hour < 11) return 'breakfast';
+        if (hour >= 11 && hour < 16) return 'lunch';
+        if (hour >= 16 && hour < 22) return 'dinner';
+        return 'late-night';
+    }
+
+    /**
+     * Match weather to dish weather_fit
+     */
+    _matchWeather(currentWeather, dishWeatherFit) {
+        const weatherMap = {
+            'rainy': 'rainy',
+            'cold': 'cold',
+            'hot': 'hot',
+            'pleasant': 'neutral',
+            'cloudy': 'neutral'
+        };
+
+        const mappedWeather = weatherMap[currentWeather] || 'neutral';
+        return dishWeatherFit.includes(mappedWeather);
+    }
+
+    /**
+     * Apply novelty cap multiplier
+     */
+    _getNoveltyCapMultiplier(dishNovelty, userCap) {
+        const capMap = {
+            'low': { safe: 1.0, moderate: 0.5, adventurous: 0.3 },
+            'medium': { safe: 1.0, moderate: 1.0, adventurous: 0.6 },
+            'high': { safe: 1.0, moderate: 1.0, adventurous: 1.0 }
+        };
+
+        return capMap[userCap]?.[dishNovelty] || 1.0;
+    }
+
+    /**
+     * Get repetition penalty
+     */
+    _getRepetitionPenalty(dish, recentDishes) {
+        const recentIds = recentDishes.map(d => d.id);
+
+        // Heavy penalty if in last 5 dishes
+        if (recentIds.includes(dish.id)) {
+            return 0.3;
+        }
+
+        // Medium penalty if same type in last 3
+        const recentTypes = recentDishes.slice(-3).map(d => d.type);
+        const currentType = dish.attributes.comfort_level + '_' + dish.attributes.novelty_level;
+
+        if (recentTypes.includes(currentType)) {
+            return 0.6;
+        }
+
+        return 1.0;
+    }
+
+    /**
+     * Get recency bonus (reward dishes not seen in a while)
+     */
+    _getRecencyBonus(dish, recentDishes) {
+        const last10 = recentDishes.slice(-10);
+        const seenRecently = last10.some(d => d.id === dish.id);
+
+        return seenRecently ? 1.0 : 1.2;
+    }
+
+    /**
+     * Get cuisine multiplier based on user country
+     */
+    _getCuisineMultiplier(dishCuisine, userCountry) {
+        // Boost local cuisine
+        const countryMap = {
+            'India': 'Indian',
+            'Italy': 'Italian',
+            'China': 'Chinese',
+            'USA': 'American'
+        };
+
+        const localCuisine = countryMap[userCountry];
+        return dishCuisine === localCuisine ? 1.2 : 1.0;
+    }
+
+    /**
+     * Select backup that's different from primary
+     */
+    _selectBackup(scoredFoods, primary) {
+        const primaryType = primary.attributes.comfort_level + '_' + primary.attributes.novelty_level;
+
+        for (let i = 1; i < scoredFoods.length; i++) {
+            const candidate = scoredFoods[i];
+            const candidateType = candidate.attributes.comfort_level + '_' + candidate.attributes.novelty_level;
+
+            // Select first dish that's a different type
+            if (candidateType !== primaryType) {
+                return candidate;
+            }
+        }
+
+        // Fallback to second highest if all same type
+        return scoredFoods[1];
+    }
+
+    /**
+     * Fallback to default recommendations if no profile
+     */
+    _getDefaultRecommendations(context, userCountry) {
+        const scoredFoods = this.foods.map(food => ({
+            ...food,
+            score: this._calculateBasicScore(food, context, userCountry)
+        }));
+
+        scoredFoods.sort((a, b) => b.score - a.score);
+
         this.currentRecommendations.primary = scoredFoods[0];
         this.currentRecommendations.backup = scoredFoods[1];
 
@@ -49,135 +270,69 @@ class RecommendationEngine {
     }
 
     /**
-     * Calculate recommendation score for a food item
+     * Basic scoring without user profile
      */
-    calculateScore(food, context, userCountry = null) {
+    _calculateBasicScore(food, context, userCountry) {
         let score = 0;
 
-        // 1. Time/Meal Type Score (40% weight)
-        const mealScore = food.timeScore[context.mealType] || 0;
-        score += mealScore * 4;
+        // Time-based scoring
+        const timeOfDay = context.timeOfDay || 'lunch';
+        score += food.timeScore?.[timeOfDay] || 5;
 
-        // 2. Weather Score (30% weight)
-        const weatherScore = food.weatherScore[context.weather] || 5;
-        score += weatherScore * 3;
+        // Weather-based scoring
+        const weather = context.weather || 'pleasant';
+        score += food.weatherScore?.[weather] || 5;
 
-        // 3. Day Type Score (20% weight)
-        const dayScore = food.dayScore[context.dayType] || 5;
-        score += dayScore * 2;
+        // Day-based scoring
+        const dayType = context.dayType || 'weekday';
+        score += food.dayScore?.[dayType] || 5;
 
-        // 4. User Preference Score (10% weight)
-        const preferenceScore = this.userTracker.getPreferenceScore(food.id);
-        score += preferenceScore * 1;
-
-        // 5. Country/Cuisine Preference Boost (15% weight)
-        if (userCountry && food.cuisine) {
-            const cuisineBoost = this.getCuisineBoost(food.cuisine, userCountry);
-            score += cuisineBoost * 1.5;
-        }
-
-        // 6. Recency penalty - avoid showing same food too often
-        const recentViews = this.userTracker.getFoodHistory(food.id)
-            .filter(i => i.type === 'view' || i.type === 'order' || i.type === 'make');
-
-        if (recentViews.length > 0) {
-            const lastView = new Date(recentViews[recentViews.length - 1].timestamp);
-            const hoursSinceLastView = (Date.now() - lastView.getTime()) / (1000 * 60 * 60);
-
-            // Apply penalty if viewed in last 24 hours
-            if (hoursSinceLastView < 24) {
-                score -= (24 - hoursSinceLastView) * 2;
-            }
+        // Country preference
+        if (userCountry === 'India' && food.cuisine === 'Indian') {
+            score += 3;
         }
 
         return score;
     }
 
     /**
-     * Get cuisine boost based on user's country
-     */
-    getCuisineBoost(cuisine, country) {
-        // Map countries to their local cuisines
-        const countryToCuisine = {
-            'India': ['Indian'],
-            'USA': ['American'],
-            'Italy': ['Italian'],
-            'Mexico': ['Mexican'],
-            'Japan': ['Japanese'],
-            'China': ['Chinese'],
-            'Thailand': ['Thai'],
-            'France': ['French'],
-            'Greece': ['Mediterranean'],
-            'UK': ['American'], // Similar tastes
-            'Spain': ['Mediterranean'],
-            'Other': [] // No specific boost
-        };
-
-        const localCuisines = countryToCuisine[country] || [];
-
-        // Give strong boost to local cuisine
-        if (localCuisines.includes(cuisine)) {
-            return 10; // Strong boost for local cuisine
-        }
-
-        // Give small boost to similar cuisines
-        if (country === 'India' && cuisine === 'Thai') return 3;
-        if (country === 'USA' && cuisine === 'Mexican') return 3;
-        if (country === 'Italy' && cuisine === 'French') return 3;
-        if (country === 'Japan' && cuisine === 'Chinese') return 3;
-
-        return 0; // No boost
-    }
-
-    /**
-     * Get contextual reason for recommendation
-     */
-    getReason(food, context) {
-        // Check if food has specific reasons for current context
-        const { weather, timeOfDay, dayType } = context;
-
-        // Priority: weather-specific reason
-        if (food.reason[weather]) {
-            return food.reason[weather];
-        }
-
-        // Then: time-specific reason
-        if (food.reason[timeOfDay]) {
-            return food.reason[timeOfDay];
-        }
-
-        // Then: day-specific reason
-        if (food.reason[dayType]) {
-            return food.reason[dayType];
-        }
-
-        // Fallback: generic reason based on meal type
-        const genericReasons = {
-            breakfast: `Perfect way to start your ${dayType === 'weekend' ? 'weekend' : 'day'}`,
-            lunch: `Satisfying lunch for a ${weather} ${timeOfDay}`,
-            dinner: `Delicious dinner to end your day`,
-            snack: `Quick and tasty ${timeOfDay} snack`
-        };
-
-        return genericReasons[context.mealType] || food.description;
-    }
-
-    /**
-     * Get current recommendations
+     * Get current recommendations (without recalculating)
      */
     getCurrentRecommendations() {
         return this.currentRecommendations;
     }
 
     /**
-     * Swap primary and backup recommendations
+     * Get reason for recommendation
      */
-    swapToPrimary() {
-        const temp = this.currentRecommendations.primary;
-        this.currentRecommendations.primary = this.currentRecommendations.backup;
-        this.currentRecommendations.backup = temp;
+    getRecommendationReason(food, context) {
+        const timeOfDay = context.timeOfDay || 'lunch';
+        const weather = context.weather || 'pleasant';
+        const dayType = context.dayType || 'weekday';
+
+        // Priority: time > weather > day
+        if (food.reason?.[timeOfDay]) {
+            return food.reason[timeOfDay];
+        }
+        if (food.reason?.[weather]) {
+            return food.reason[weather];
+        }
+        if (food.reason?.[dayType]) {
+            return food.reason[dayType];
+        }
+
+        return food.description || 'A delicious choice for you';
+    }
+
+    /**
+     * Refresh recommendations
+     */
+    async refresh(context, userCountry) {
+        return await this.getRecommendations(context, userCountry);
     }
 }
 
 // Export for use in other modules
-window.RecommendationEngine = RecommendationEngine;
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = RecommendationEngine;
+}
