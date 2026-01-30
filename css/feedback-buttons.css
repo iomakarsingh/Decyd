@@ -1,0 +1,113 @@
+/* Feedback Buttons Styles */
+
+.feedback-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    justify-content: center;
+}
+
+.feedback-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-family: var(--font-display);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    border: 2px solid transparent;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    background: var(--color-cream);
+    color: var(--color-text-secondary);
+}
+
+.feedback-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-btn:active {
+    transform: translateY(0);
+}
+
+.feedback-icon {
+    font-size: var(--font-size-lg);
+    line-height: 1;
+}
+
+.feedback-perfect {
+    border-color: var(--color-cream-dark);
+}
+
+.feedback-perfect:hover {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-color: #10b981;
+    color: white;
+}
+
+.feedback-perfect.active {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-color: #10b981;
+    color: white;
+    animation: feedback-pulse 0.5s ease;
+}
+
+.feedback-not-quite {
+    border-color: var(--color-cream-dark);
+}
+
+.feedback-not-quite:hover {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    border-color: #f59e0b;
+    color: white;
+}
+
+.feedback-not-quite.active {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    border-color: #f59e0b;
+    color: white;
+    animation: feedback-pulse 0.5s ease;
+}
+
+@keyframes feedback-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Feedback button disabled state */
+.feedback-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .feedback-buttons {
+        gap: var(--spacing-sm);
+    }
+
+    .feedback-btn {
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .feedback-icon {
+        font-size: var(--font-size-base);
+    }
+
+    .feedback-text {
+        display: none;
+    }
+}
