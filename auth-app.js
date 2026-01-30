@@ -109,6 +109,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('signup-password').value;
         const passwordConfirm = document.getElementById('signup-password-confirm').value;
         const country = document.getElementById('signup-country').value;
+
+        // Get preference answers
+        const q1 = document.getElementById('signup-q1').value;
+        const q2 = document.getElementById('signup-q2').value;
+        const q3 = document.getElementById('signup-q3').value;
+        const q4 = document.getElementById('signup-q4').value;
+
         const submitBtn = signupFormElement.querySelector('button[type="submit"]');
 
         // Validate password match
@@ -124,6 +131,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = authManager.register(name, email, password, country);
 
             if (result.success) {
+                // Initialize user profile from signup answers
+                const profile = UserProfile.initializeFromSignup({
+                    q1: q1,
+                    q2: q2,
+                    q3: q3,
+                    q4: q4
+                });
+                UserProfile.save(profile);
+
+                console.log('✅ User profile initialized from signup:', profile);
+
                 // Auto-login after registration
                 authManager.login(email, password, false);
                 // Redirect to main app

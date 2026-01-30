@@ -26,6 +26,7 @@ class DecydApp {
         this.currentFood = null;
         this.currentContext = null;
         this.recommendations = null;
+        this.userInteracted = false;  // Track if user interacted with food
 
         // View elements
         this.views = {
@@ -35,6 +36,9 @@ class DecydApp {
             make: document.getElementById('make-view'),
             recipe: document.getElementById('recipe-view')
         };
+
+        // Setup ignore tracking
+        this._setupIgnoreTracking();
 
         // Initialize app
         this.init();
@@ -46,6 +50,13 @@ class DecydApp {
     async init() {
         // Display user name in header
         this.displayUserInfo();
+
+        // Check if user needs to set up preferences (migration)
+        const needsSetup = PreferenceSetupModal.checkAndShow();
+        if (needsSetup) {
+            // Modal will handle profile creation
+            // Continue with default recommendations for now
+        }
 
         // Check and apply weekly memory decay
         LearningEngine.checkAndApplyDecay();
@@ -187,6 +198,9 @@ class DecydApp {
      * Handle Order button click
      */
     handleOrder() {
+        // Mark user as interacted
+        this.userInteracted = true;
+
         // Track order action with user tracker
         this.userTracker.trackOrder(this.currentFood.id, this.currentContext);
 
@@ -213,6 +227,9 @@ class DecydApp {
      * Handle Make button click
      */
     handleMake() {
+        // Mark user as interacted
+        this.userInteracted = true;
+
         // Track make action with user tracker
         this.userTracker.trackMake(this.currentFood.id, this.currentContext);
 
@@ -334,6 +351,20 @@ class DecydApp {
         if (hour >= 11 && hour < 16) return 'lunch';
         if (hour >= 16 && hour < 22) return 'evening';
         return 'night';
+    }
+
+    /**
+     * Setup ignore tracking for page unload
+     */
+    _setupIgnoreTracking() {
+        window.addEventListener('beforeunload', () => {
+            // Only track ignore if user saw a recommendation but didn't interact
+            if (this.currentFood && !this.userInteracted) {
+                const timeOfDay = this._getCurrentTimeSlot();
+                LearningEngine.trackInteraction('ignore', this.currentFood, timeOfDay);
+                console.log('🚫 User ignored recommendation:', this.currentFood.name);
+            }
+        });
     }
 }
 

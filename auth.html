@@ -136,6 +136,51 @@
                         <small class="form-hint">We'll prioritize local cuisine for you</small>
                     </div>
 
+                    <!-- Preference Questions for Profile Initialization -->
+                    <div class="form-divider">
+                        <span>🎯 Tell us about your food preferences</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-q1">When hungry, you mostly want:</label>
+                        <select id="signup-q1" name="q1" required class="form-select">
+                            <option value="">Choose one...</option>
+                            <option value="familiar">Something familiar & comforting</option>
+                            <option value="exciting">Something new & exciting</option>
+                            <option value="quick">Something quick & easy</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-q2">Comfort food feels:</label>
+                        <select id="signup-q2" name="q2" required class="form-select">
+                            <option value="">Choose one...</option>
+                            <option value="home-style">Home-style & traditional</option>
+                            <option value="indulgent">Rich & indulgent</option>
+                            <option value="light">Light & healthy</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-q3">I prefer to:</label>
+                        <select id="signup-q3" name="q3" required class="form-select">
+                            <option value="">Choose one...</option>
+                            <option value="order">Order food (delivery/takeout)</option>
+                            <option value="cook">Cook at home</option>
+                            <option value="mix">Mix of both</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-q4">How adventurous are you with food?</label>
+                        <select id="signup-q4" name="q4" required class="form-select">
+                            <option value="">Choose one...</option>
+                            <option value="safe">I stick to what I know</option>
+                            <option value="sometimes">I try new things sometimes</option>
+                            <option value="surprise">Surprise me! I love adventures</option>
+                        </select>
+                    </div>
+
                     <button type="submit" class="btn btn-primary btn-full">
                         Create Account
                     </button>
@@ -154,6 +199,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="js/user-profile.js"></script>
     <script src="js/auth-manager.js"></script>
     <script src="auth-app.js"></script>
 </body>
