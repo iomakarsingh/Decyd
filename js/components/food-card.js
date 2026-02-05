@@ -15,9 +15,10 @@ class FoodCard {
     render(food, reason) {
         if (!food) return;
 
-        // Update image
+        // Update image with cuisine data for fallback
         this.imageElement.src = food.image;
         this.imageElement.alt = food.name;
+        this.imageElement.dataset.cuisine = food.cuisine || 'International';
 
         // Update text content
         this.cuisineElement.textContent = food.cuisine || 'International';
