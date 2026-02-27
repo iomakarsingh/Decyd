@@ -303,26 +303,30 @@ class RecommendationEngine {
     }
 
     /**
-     * Swap backup to primary position and select a new backup
-     * Called when user clicks "See backup option"
+     * Swap backup to primary position (called when user clicks backup)
+     * Bug #2 fix: this method was missing entirely
      */
     swapToPrimary() {
-        const oldBackup = this.currentRecommendations.backup;
-        if (!oldBackup) return;
+        if (!this.currentRecommendations.backup) return;
 
-        // Promote backup to primary
-        this.currentRecommendations.primary = oldBackup;
+        // Old backup becomes the new primary
+        const newPrimary = this.currentRecommendations.backup;
 
-        // Pick a new backup from already-scored foods (exclude new primary)
-        const newBackup = this.foods.find(f =>
-            f.id !== oldBackup.id &&
-            f.id !== (this.currentRecommendations.primary?.id)
-        );
-        this.currentRecommendations.backup = newBackup || null;
+        // Find next best candidate for backup (skip current primary and new primary)
+        const usedIds = new Set([
+            this.currentRecommendations.primary?.id,
+            newPrimary.id
+        ]);
+
+        // Score foods again to find next backup
+        const newBackup = this.foods.find(f => !usedIds.has(f.id)) || null;
+
+        this.currentRecommendations.primary = newPrimary;
+        this.currentRecommendations.backup = newBackup;
     }
 
     /**
-     * Alias for getRecommendationReason() — for backwards compatibility
+     * Alias for backward compatibility
      */
     getReason(food, context) {
         return this.getRecommendationReason(food, context);
