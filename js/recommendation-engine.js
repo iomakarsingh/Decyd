@@ -303,6 +303,32 @@ class RecommendationEngine {
     }
 
     /**
+     * Swap backup to primary position and select a new backup
+     * Called when user clicks "See backup option"
+     */
+    swapToPrimary() {
+        const oldBackup = this.currentRecommendations.backup;
+        if (!oldBackup) return;
+
+        // Promote backup to primary
+        this.currentRecommendations.primary = oldBackup;
+
+        // Pick a new backup from already-scored foods (exclude new primary)
+        const newBackup = this.foods.find(f =>
+            f.id !== oldBackup.id &&
+            f.id !== (this.currentRecommendations.primary?.id)
+        );
+        this.currentRecommendations.backup = newBackup || null;
+    }
+
+    /**
+     * Alias for getRecommendationReason() — for backwards compatibility
+     */
+    getReason(food, context) {
+        return this.getRecommendationReason(food, context);
+    }
+
+    /**
      * Get reason for recommendation
      */
     getRecommendationReason(food, context) {

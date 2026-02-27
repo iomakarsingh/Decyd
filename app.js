@@ -120,7 +120,7 @@ class DecydApp {
             this.currentFood = this.recommendations.primary;
 
             // Render food card
-            const reason = this.recommendationEngine.getReason(this.currentFood, this.currentContext);
+            const reason = this.recommendationEngine.getRecommendationReason(this.currentFood, this.currentContext);
             this.foodCard.render(this.currentFood, reason);
 
             // Track view
@@ -143,6 +143,14 @@ class DecydApp {
 
         // Backup suggestion
         this.actionButtons.setupBackupHandler(() => this.handleBackup());
+
+        // Feedback buttons
+        document.getElementById('feedback-perfect')?.addEventListener('click', () => {
+            this.handleFeedbackPerfect();
+        });
+        document.getElementById('feedback-not-quite')?.addEventListener('click', () => {
+            this.handleFeedbackNotQuite();
+        });
 
         // Back buttons
         document.getElementById('back-from-order').addEventListener('click', () => {
@@ -176,8 +184,13 @@ class DecydApp {
             this.hideModal();
         });
 
-        // Logout button (added dynamically, so use event delegation)
+        // Profile settings button (added dynamically via header)
         document.addEventListener('click', (e) => {
+            if (e.target.closest('#profile-settings-btn')) {
+                if (typeof ProfileSettingsModal !== 'undefined') {
+                    ProfileSettingsModal.show();
+                }
+            }
             if (e.target.closest('#logout-btn')) {
                 this.handleLogout();
             }
@@ -260,6 +273,9 @@ class DecydApp {
      * Handle backup suggestion toggle
      */
     handleBackup() {
+        // Mark user as interacted (prevents ignore tracking on page leave)
+        this.userInteracted = true;
+
         // Track skip action with user tracker
         this.userTracker.trackSkip(this.currentFood.id, this.currentContext);
 
@@ -273,11 +289,114 @@ class DecydApp {
         this.currentFood = this.recommendations.primary;
 
         // Update food card
-        const reason = this.recommendationEngine.getReason(this.currentFood, this.currentContext);
+        const reason = this.recommendationEngine.getRecommendationReason(this.currentFood, this.currentContext);
         this.foodCard.update(this.currentFood, reason);
 
         // Track new view
         this.userTracker.trackView(this.currentFood.id, this.currentContext);
+
+        // Reset for next interaction
+        this.userInteracted = false;
+    }
+
+    /**
+     * Handle "Perfect!" feedback button
+     */
+    handleFeedbackPerfect() {
+        if (!this.currentFood) return;
+
+        this.userInteracted = true;
+
+        const timeOfDay = this._getCurrentTimeSlot();
+        LearningEngine.trackInteraction('primary_click', this.currentFood, timeOfDay);
+
+        // Visual feedback — animate button and show toast
+        const btn = document.getElementById('feedback-perfect');
+        btn.classList.add('active');
+        document.getElementById('feedback-not-quite')?.classList.remove('active');
+        this._showToast('✨ Great! We\'ll suggest more like this.');
+
+        console.log('✨ Perfect feedback for:', this.currentFood.name);
+    }
+
+    /**
+     * Handle "Not quite" feedback button
+     */
+    handleFeedbackNotQuite() {
+        if (!this.currentFood) return;
+
+        this.userInteracted = true;
+
+        const timeOfDay = this._getCurrentTimeSlot();
+        LearningEngine.trackInteraction('ignore', this.currentFood, timeOfDay);
+
+        // Visual feedback — animate button, then swap to backup
+        const btn = document.getElementById('feedback-not-quite');
+        btn.classList.add('active');
+        document.getElementById('feedback-perfect')?.classList.remove('active');
+        this._showToast('🤔 Got it! Trying something different...');
+
+        // Auto-swap to backup after brief delay
+        setTimeout(() => {
+            if (this.recommendations?.backup) {
+                this.recommendationEngine.swapToPrimary();
+                this.recommendations = this.recommendationEngine.getCurrentRecommendations();
+                this.currentFood = this.recommendations.primary;
+                const reason = this.recommendationEngine.getRecommendationReason(this.currentFood, this.currentContext);
+                this.foodCard.update(this.currentFood, reason);
+                this.userTracker.trackView(this.currentFood.id, this.currentContext);
+                // Reset button states on new card
+                document.getElementById('feedback-perfect')?.classList.remove('active');
+                document.getElementById('feedback-not-quite')?.classList.remove('active');
+                this.userInteracted = false;
+            }
+        }, 800);
+
+        console.log('🤔 Not quite feedback for:', this.currentFood.name);
+    }
+
+    /**
+     * Show a brief toast notification
+     */
+    _showToast(message) {
+        // Remove existing toast if any
+        document.getElementById('decyd-toast')?.remove();
+
+        const toast = document.createElement('div');
+        toast.id = 'decyd-toast';
+        toast.textContent = message;
+        toast.style.cssText = `
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: #1a1a1a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-family: var(--font-display, sans-serif);
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            white-space: nowrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        `;
+        document.body.appendChild(toast);
+
+        // Animate in
+        requestAnimationFrame(() => {
+            toast.style.opacity = '1';
+            toast.style.transform = 'translateX(-50%) translateY(0)';
+        });
+
+        // Auto-remove after 2.5s
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateX(-50%) translateY(10px)';
+            setTimeout(() => toast.remove(), 300);
+        }, 2500);
     }
 
     /**

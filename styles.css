@@ -249,6 +249,33 @@ img {
     padding: var(--spacing-md) 0;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.profile-settings-btn {
+    background: var(--color-cream-dark);
+    border: none;
+    border-radius: var(--radius-full);
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.profile-settings-btn:hover {
+    background: var(--color-cream);
+    transform: rotate(20deg);
+}
+
+
 .logo h1 {
     font-family: var(--font-logo);
     font-size: var(--font-size-3xl);
